@@ -1,18 +1,19 @@
 package com.example.bookstoreapp.model;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-@Table
+
 @Data
 @Getter
 @Setter
+@Builder
+@Entity
+@Table
+@NoArgsConstructor
+@AllArgsConstructor
+
 public class BookModel {
 
     @Id
