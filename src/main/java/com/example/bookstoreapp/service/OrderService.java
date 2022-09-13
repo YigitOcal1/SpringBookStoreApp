@@ -33,7 +33,7 @@ public class OrderService {
                 .reduce(0.0,Double::sum);
 
         Order order= Order.builder()
-                .bookList(bookIdList)
+                .bookIdList(bookIdList)
                 .totalPrice(totalPrice)
                 .userName(userName)
                 .build();
